@@ -15,3 +15,5 @@ Then, open the Server file and excute the BigTwoServer.jar file to create and se
 Lastly, share your own ip address to your friend and then enjoy the game!!!<br />
 
 ## Source Code are stored in the src file.
+
+<img src="https://github.com/bigbigphone2/BigTwoGame/blob/main/Screenshot%202021-12-13%20at%2010.12.58%20PM.png" width=800 >
