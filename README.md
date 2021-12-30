@@ -7,7 +7,7 @@ This programe can let people play BigTwo through internet with your friend<br />
 The following are the procedure to start the game:<br />
 
 ## For Player:
-You just need to download the BigTwoGame file and excute the BigTwoGame.exe file<br />
+You just need to download the BigTwoGame folder and excute the BigTwoGame.exe file<br />
 
 ## For Game Hoster:
 First,You have to have at least java 1.11.0 installed in your computer.<br />
