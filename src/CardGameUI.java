@@ -1,8 +1,6 @@
 /**
  * An interface for a general card game user interface
  * 
- * @author Kenneth Wong
- * 
  */
 public interface CardGameUI {
 	/**
