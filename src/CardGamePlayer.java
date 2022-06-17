@@ -1,7 +1,6 @@
 /**
  * This class is used to represent a player in general card games.
  * 
- * @author Kenneth Wong
  */
 public class CardGamePlayer {
 	private static int playerId = 0;
