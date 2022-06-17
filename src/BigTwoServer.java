@@ -1,7 +1,5 @@
 /**
  * This class is used to model a Big Two card game server.
- * @author Kenneth Wong
- *
  */
 public class BigTwoServer extends CardGameServer {
 	/**
