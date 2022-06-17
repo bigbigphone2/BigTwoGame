@@ -29,6 +29,11 @@ public class FullHouse extends Hand{
                 return true;
             }
             return false;
+        }else if (this.getCard(2).rank==this.getCard(3).rank && this.getCard(3).rank == this.getCard(4).rank){
+            if (this.getCard(0).rank==this.getCard(1).rank){
+                return true;
+            }
+            return false;
         }
         return false;
     }
