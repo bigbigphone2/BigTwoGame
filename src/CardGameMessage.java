@@ -1,8 +1,6 @@
 /**
  * This class is used to model the message for a network card game.
  * 
- * @author Kenneth Wong
- *
  */
 public class CardGameMessage extends GameMessage {
 	private static final long serialVersionUID = -4847411748052026276L;
