@@ -1,3 +1,5 @@
+package PokerGame;
+
 /**
  * This class is used to represent a player in general card games.
  * 

@@ -39,7 +39,7 @@ public class CardGameMessage extends GameMessage {
 	public static final int READY = 4;
 	/**
 	 * Broadcast by the server when all clients are ready for a new game. In this message, playerID is 
-	 * -1 (no being used), and data is a reference to a Deck object (a shuffled deck for the new game).
+	 * -1 (no being used), and data is a reference to a PokerGame.Deck object (a shuffled deck for the new game).
 	 */
 	public static final int START = 5;
 	/**

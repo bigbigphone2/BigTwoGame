@@ -1,3 +1,6 @@
+import PokerGame.*;
+import BigTwoHand.*;
+
 import java.util.ArrayList;
 /**
  * The BigTwo class is used to model a Big Two card game.
@@ -5,7 +8,7 @@ import java.util.ArrayList;
  * @author Lee Yat Hei
  *
  */
-public class BigTwo {
+public class BigTwo implements  CardGame{
     /**
      *  an int specifying the number of players.
      */
@@ -249,9 +252,9 @@ public class BigTwo {
     /**
      *a method for returning a valid hand from the specified list of cards of the player
      * @param player a CardGmamePlayer object which specific the current active player
-     * @param cards a CardList object which include the Card object which the current player going to place
+     * @param cards a PokerGame.CardList object which include the PokerGame.Card object which the current player going to place
      *
-     * @return a Hand object which include the type of hand and the card included.
+     * @return a PokerGame.Hand object which include the type of hand and the card included.
      */
     public static Hand composeHand(CardGamePlayer player, CardList cards){
 

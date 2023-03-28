@@ -1,5 +1,7 @@
+import PokerGame.Card;
+
 /**
- * it is a subclass of the Card class and is used to model a card used in a
+ * it is a subclass of the PokerGame.Card class and is used to model a card used in a
  * Big Two card game.
  *
  * @author Lee Yat Hei
@@ -10,7 +12,7 @@ public class BigTwoCard extends Card{
      */
     int rankValue;
     /**
-     * the rank Value of the Card given by the compare method
+     * the rank Value of the PokerGame.Card given by the compare method
      */
     int cardRankValue;
 
@@ -34,7 +36,7 @@ public class BigTwoCard extends Card{
     @Override
     public int compareTo(Card card){
         rankValue=this.rank;
-        cardRankValue=card.rank;
+        cardRankValue= card.getRank();
 
         if (rankValue==0){
             rankValue=13;

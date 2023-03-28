@@ -1,3 +1,9 @@
+package PokerGame;
+
+import PokerGame.CardGamePlayer;
+import PokerGame.Deck;
+import PokerGame.Hand;
+
 import java.util.ArrayList;
 
 /**

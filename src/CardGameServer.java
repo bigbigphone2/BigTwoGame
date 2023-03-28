@@ -1,3 +1,5 @@
+import PokerGame.Deck;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.ObjectInputStream;
@@ -353,10 +355,10 @@ public class CardGameServer {
 	}
 
 	/**
-	 * Creates and returns an instance of the Deck class. Overrides this method
+	 * Creates and returns an instance of the PokerGame.Deck class. Overrides this method
 	 * if a different type of deck is needed.
 	 * 
-	 * @return an instance of the Deck class
+	 * @return an instance of the PokerGame.Deck class
 	 */
 	public Deck createDeck() {
 		return new Deck();
@@ -392,7 +394,6 @@ public class CardGameServer {
 	/**
 	 * This inner class is used for receiving incoming messages from a client
 	 * 
-	 * @author Kenneth Wong
 	 *
 	 */
 	private class ClientHandler implements Runnable {
@@ -492,7 +493,6 @@ public class CardGameServer {
 	/**
 	 * This inner class is used for handling the Clear menu
 	 * 
-	 * @author Kenneth Wong
 	 *
 	 */
 	private class ClearMenuItemListener implements ActionListener {
@@ -504,7 +504,6 @@ public class CardGameServer {
 	/**
 	 * This inner class is used for handling the Quit menu
 	 * 
-	 * @author Kenneth Wong
 	 *
 	 */
 	private class QuitMenuItemListener implements ActionListener {

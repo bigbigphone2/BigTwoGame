@@ -1,3 +1,7 @@
+import PokerGame.CardGamePlayer;
+import PokerGame.CardGameUI;
+import PokerGame.Hand;
+
 import javax.swing.*;
 import javax.swing.text.DefaultCaret;
 import java.awt.*;
@@ -10,7 +14,7 @@ import java.util.Arrays;
  * @author Lee Yat Hei
  *
  */
-public class BigTwoGUI implements CardGameUI{
+public class BigTwoGUI implements CardGameUI {
     /**
      * a Big Two card game associates with this GUI.
      */
@@ -222,8 +226,10 @@ public class BigTwoGUI implements CardGameUI{
 
     /**
      * a method for resetting the GUI.
+     * (i) reset the list of selected cards;
+     * (ii) clear the message area;
+     * (iii) enable user interactions.
      */
-    //  (i) reset the list of selected cards; (ii) clear the message area; and (iii) enable user interactions.
     @Override
     public void reset() {
 
@@ -238,7 +244,6 @@ public class BigTwoGUI implements CardGameUI{
     /**
      * a method for enabling user interactions with the GUI
      */
-    //You should (i) enable the �lay�� button and �ass�� button (i.e., making them clickable); (ii) enable the chat input; and (iii) enable the BigTwoPanel for selection of cards through mouse clicks.
     @Override
     public void enable() {
     	
@@ -254,7 +259,6 @@ public class BigTwoGUI implements CardGameUI{
     /**
      * a method for disabling user interactions with the GUI.
      */
-    //You should (i) disable the play button and pass button (i.e., making them not clickable); (ii) disable the chat input; and (ii) disable the BigTwoPanel for selection of cards through mouse clicks.
     @Override
     public void disable() {
         playButton.setEnabled(false);
@@ -381,7 +385,7 @@ public class BigTwoGUI implements CardGameUI{
 
 
             }
-            //Last Hand
+            //Last PokerGame.Hand
             if (isStart ) {
                 
                 

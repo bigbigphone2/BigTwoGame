@@ -1,22 +1,24 @@
+package BigTwoHand;
 
+import PokerGame.*;
 /**
- * it is a subclass of the Hand class,s and are used to model a hand of Single
+ * it is a subclass of the PokerGame.Hand class,s and are used to model a hand of BigTwoHand.Single
  *
  * @author Lee Yat Hei
  */
 public class Single extends Hand {
     /**
-     * Constructor for building Single type hand.
+     * Constructor for building BigTwoHand.Single type hand.
      *
      * @param player a CardGmamePlayer object which specific the current active player
-     * @param cards a CardList object which include the Card object which the current player going to place
+     * @param cards a PokerGame.CardList object which include the PokerGame.Card object which the current player going to place
      *
      */
     public Single(CardGamePlayer player, CardList cards) {
         super(player, cards);
     }
     /**
-     * A method for checking the given card is valid for building a Single hand
+     * A method for checking the given card is valid for building a BigTwoHand.Single hand
      * @return is it valid or not.
      */
     @Override
@@ -29,10 +31,10 @@ public class Single extends Hand {
     /**
      * – a method for returning a string specifying the type of this hand.
      *
-     * @return the type of this hand-Single
+     * @return the type of this hand-BigTwoHand.Single
      */
     @Override
     public String getType() {
-        return "Single";
+        return "BigTwoHand.Single";
     }
 }

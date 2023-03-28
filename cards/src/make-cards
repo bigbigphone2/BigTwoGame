@@ -177,7 +177,7 @@ sub quadinsert
     my($pos,$ovly)=@_;
     my($size,$sympos);
     
-#    print "Quad insert $ovly at ($pos):\n";
+#    print "BigTwoHand.Quad insert $ovly at ($pos):\n";
 
     $size=getsize("$ovly.pnm");
     $sympos=(getx($worksize)-getx($pos)-getx($size)).

@@ -1,3 +1,5 @@
+package PokerGame;
+
 /**
  * An interface for a general card game user interface
  * 

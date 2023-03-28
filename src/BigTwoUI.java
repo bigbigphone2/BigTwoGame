@@ -1,3 +1,7 @@
+import PokerGame.CardGamePlayer;
+import PokerGame.CardGameUI;
+import PokerGame.Hand;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -6,7 +10,7 @@ import java.util.StringTokenizer;
  * This class is used for modeling a user interface for the Big Two card game.
  * 
  */
-public class BigTwoUI {
+public class BigTwoUI implements CardGameUI {
 	private final static int MAX_CARD_NUM = 13; // max. no. of cards each player holds
 	private BigTwo game = null; // a BigTwo object
 	private ArrayList<CardGamePlayer> playerList; // the list of players

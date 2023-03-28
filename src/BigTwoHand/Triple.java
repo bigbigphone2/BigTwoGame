@@ -1,22 +1,25 @@
+package BigTwoHand;
+
+import PokerGame.*;
 /**
- * it is a subclass of the Hand class,s and are used to model a hand of Triple
+ * it is a subclass of the PokerGame.Hand class,s and are used to model a hand of BigTwoHand.Triple
  *
  * @author Lee Yat Hei
  */
 
 public class Triple extends Hand {
     /**
-     * Constructor for building Triple type hand.
+     * Constructor for building BigTwoHand.Triple type hand.
      *
      * @param player a CardGmamePlayer object which specific the current active player
-     * @param cards a CardList object which include the Card object which the current player going to place
+     * @param cards a PokerGame.CardList object which include the PokerGame.Card object which the current player going to place
      *
      */
     public Triple(CardGamePlayer player, CardList cards) {
         super(player, cards);
     }
     /**
-     * A method for checking the given card is valid for building a Triple hand
+     * A method for checking the given card is valid for building a BigTwoHand.Triple hand
      * @return is it valid or not.
      */
     @Override
@@ -24,7 +27,7 @@ public class Triple extends Hand {
         if (this.size()!=3){
             return false;
         }
-        if (this.getCard(0).rank==this.getCard(1).rank && this.getCard(1).rank == this.getCard(2).rank){
+        if (this.getCard(0).getRank() ==this.getCard(1).getRank() && this.getCard(1).getRank() == this.getCard(2).getRank()){
             return true;
         }
         return false;
@@ -32,10 +35,10 @@ public class Triple extends Hand {
     /**
      * – a method for returning a string specifying the type of this hand.
      *
-     * @return the type of this hand-Triple
+     * @return the type of this hand-BigTwoHand.Triple
      */
     @Override
     public String getType() {
-        return "Triple";
+        return "BigTwoHand.Triple";
     }
 }

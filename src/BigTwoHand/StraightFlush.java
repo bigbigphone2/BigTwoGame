@@ -1,15 +1,17 @@
+package BigTwoHand;
 
+import PokerGame.*;
 /**
- * it is a subclass of the Hand class,s and are used to model a hand of StraightFlush
+ * it is a subclass of the PokerGame.Hand class,s and are used to model a hand of BigTwoHand.StraightFlush
  *
  * @author Lee Yat Hei
  */
 public class StraightFlush extends Hand {
     /**
-     * Constructor for building StraightFlush type hand.
+     * Constructor for building BigTwoHand.StraightFlush type hand.
      *
      * @param player a CardGmamePlayer object which specific the current active player
-     * @param cards a CardList object which include the Card object which the current player going to place
+     * @param cards a PokerGame.CardList object which include the PokerGame.Card object which the current player going to place
      *
      */
     public StraightFlush(CardGamePlayer player, CardList cards) {
@@ -17,7 +19,7 @@ public class StraightFlush extends Hand {
     }
 
     /**
-     * A method for checking the given card is valid for building a StraightFlush hand
+     * A method for checking the given card is valid for building a BigTwoHand.StraightFlush hand
      * @return is it valid or not.
      */
     @Override
@@ -44,23 +46,23 @@ public class StraightFlush extends Hand {
             }
             lastRank=currentRank;
         }
-        lastSuit=this.getCard(0).suit;
+        lastSuit= this.getCard(0).getSuit();
         for (int i=0;i<this.size();i++){
-            currentSuit=this.getCard(i).suit;
+            currentSuit=this.getCard(i).getSuit();
             if(currentSuit!=lastSuit){
                 return false;
             }
-            lastSuit=this.getCard(i).suit;
+            lastSuit=this.getCard(i).getSuit();
         }
         return true;
     }
     /**
      * – a method for returning a string specifying the type of this hand.
      *
-     * @return the type of this hand-StraightFlush
+     * @return the type of this hand-BigTwoHand.StraightFlush
      */
     @Override
     public String getType() {
-        return "StraightFlush";
+        return "BigTwoHand.StraightFlush";
     }
 }

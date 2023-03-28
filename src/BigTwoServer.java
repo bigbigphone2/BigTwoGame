@@ -1,3 +1,5 @@
+import PokerGame.Deck;
+
 /**
  * This class is used to model a Big Two card game server.
  */

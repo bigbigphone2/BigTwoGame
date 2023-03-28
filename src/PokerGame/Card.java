@@ -1,3 +1,5 @@
+package PokerGame;
+
 import java.io.Serializable;
 
 /**
@@ -14,7 +16,7 @@ public class Card implements Comparable<Card>, Serializable {
 	protected final int rank; // 0 - 12
 
 	/**
-	 * Creates and returns an instance of the Card class.
+	 * Creates and returns an instance of the PokerGame.Card class.
 	 * 
 	 * @param suit an int value between 0 and 3 representing the suit of a card:
 	 *             <p>

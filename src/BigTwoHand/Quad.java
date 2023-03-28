@@ -1,23 +1,24 @@
+package BigTwoHand;
 
-
+import PokerGame.*;
 /**
- * it is a subclass of the Hand class,s and are used to model a hand of Quad
+ * it is a subclass of the PokerGame.Hand class,s and are used to model a hand of BigTwoHand.Quad
  *
  * @author Lee Yat Hei
  */
-public class Quad extends Hand{
+public class Quad extends Hand {
     /**
-     * Constructor for building Quad type hand.
+     * Constructor for building BigTwoHand.Quad type hand.
      *
      * @param player a CardGmamePlayer object which specific the current active player
-     * @param cards a CardList object which include the Card object which the current player going to place
+     * @param cards a PokerGame.CardList object which include the PokerGame.Card object which the current player going to place
      *
      */
     public Quad(CardGamePlayer player, CardList cards) {
         super(player, cards);
     }
     /**
-     * A method for checking the given card is valid for building a Quad hand
+     * A method for checking the given card is valid for building a BigTwoHand.Quad hand
      * @return is it valid or not.
      */
     @Override
@@ -41,10 +42,10 @@ public class Quad extends Hand{
     /**
      * – a method for returning a string specifying the type of this hand.
      *
-     * @return the type of this hand-Quad
+     * @return the type of this hand-BigTwoHand.Quad
      */
     @Override
     public String getType() {
-        return "Quad";
+        return "BigTwoHand.Quad";
     }
 }

@@ -1,7 +1,9 @@
+package PokerGame;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 /**
- * The BigTwo class s is a subclass of the CardList class and is used to model a hand of cards
+ * The BigTwo class s is a subclass of the PokerGame.CardList class and is used to model a hand of cards
  *
  * @author Lee Yat Hei
  *
@@ -15,7 +17,7 @@ public abstract class Hand extends CardList implements Serializable {
     /**
      * – a constructor for building a hand with the specified player and list of cards
      * @param player a CardGmamePlayer object which specific the current active player
-     * @param cards a CardList object which include the Card object which the current player going to place
+     * @param cards a PokerGame.CardList object which include the PokerGame.Card object which the current player going to place
      *
      */
     public Hand(CardGamePlayer player, CardList cards){
@@ -47,17 +49,17 @@ public abstract class Hand extends CardList implements Serializable {
 
     /**
      *  a method for checking if this hand beats a specified hand.
-     * @param hand the Hand object going to check beat it or not
+     * @param hand the PokerGame.Hand object going to check beat it or not
      * @return ture for beat it. false for can't beat it
      */
     public boolean beats(Hand hand){
         String typeOfHand = new String();
         ArrayList<String> FiveCardGroups = new ArrayList<>();
-        FiveCardGroups.add("StraightFlush");
-        FiveCardGroups.add("Quad");
-        FiveCardGroups.add("FullHouse");
-        FiveCardGroups.add("Flush");
-        FiveCardGroups.add("Straight");
+        FiveCardGroups.add("BigTwoHand.StraightFlush");
+        FiveCardGroups.add("BigTwoHand.Quad");
+        FiveCardGroups.add("BigTwoHand.FullHouse");
+        FiveCardGroups.add("BigTwoHand.Flush");
+        FiveCardGroups.add("BigTwoHand.Straight");
         typeOfHand= this.getType();
         if (hand== null){
             return true;
