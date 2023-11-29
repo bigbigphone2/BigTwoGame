@@ -42,6 +42,9 @@ href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html" targ
 <p><strong>5. Enjoy the Game:</strong></p>
 <p>Once your friends have connected using the provided IP address, you are ready to enjoy the game together!</p>
 
-## Source Code are stored in the src file.
+## Tech Using
+<p>Java, Swing, Websocket</p>
+# Source Code are stored in the src file.
 
+## Design Idea:
 <img src="https://github.com/bigbigphone2/BigTwoGame/blob/main/Screenshot%202021-12-13%20at%2010.12.58%20PM.png" width=800 >
